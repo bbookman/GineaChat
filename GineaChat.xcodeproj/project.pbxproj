@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE5F2FA5210E683500B8F58E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F2FA4210E683500B8F58E /* AppDelegate.swift */; };
+		CE5F2FA7210E683500B8F58E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F2FA6210E683500B8F58E /* ViewController.swift */; };
+		CE5F2FAA210E683500B8F58E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5F2FA8210E683500B8F58E /* Main.storyboard */; };
+		CE5F2FAC210E683700B8F58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5F2FAB210E683700B8F58E /* Assets.xcassets */; };
+		CE5F2FAF210E683700B8F58E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5F2FAD210E683700B8F58E /* LaunchScreen.storyboard */; };
+		CE5F2FBA210E683700B8F58E /* GineaChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F2FB9210E683700B8F58E /* GineaChatTests.swift */; };
+		CE5F2FC5210E683700B8F58E /* GineaChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F2FC4210E683700B8F58E /* GineaChatUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE5F2FB6210E683700B8F58E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE5F2F99210E683500B8F58E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE5F2FA0210E683500B8F58E;
+			remoteInfo = GineaChat;
+		};
+		CE5F2FC1210E683700B8F58E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE5F2F99210E683500B8F58E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE5F2FA0210E683500B8F58E;
+			remoteInfo = GineaChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE5F2FA1210E683500B8F58E /* GineaChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GineaChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5F2FA4210E683500B8F58E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE5F2FA6210E683500B8F58E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE5F2FA9210E683500B8F58E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE5F2FAB210E683700B8F58E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE5F2FAE210E683700B8F58E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE5F2FB0210E683700B8F58E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5F2FB5210E683700B8F58E /* GineaChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GineaChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5F2FB9210E683700B8F58E /* GineaChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GineaChatTests.swift; sourceTree = "<group>"; };
+		CE5F2FBB210E683700B8F58E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5F2FC0210E683700B8F58E /* GineaChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GineaChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE5F2FC4210E683700B8F58E /* GineaChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GineaChatUITests.swift; sourceTree = "<group>"; };
+		CE5F2FC6210E683700B8F58E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE5F2F9E210E683500B8F58E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5F2FB2210E683700B8F58E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5F2FBD210E683700B8F58E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE5F2F98210E683500B8F58E = {
+			isa = PBXGroup;
+			children = (
+				CE5F2FA3210E683500B8F58E /* GineaChat */,
+				CE5F2FB8210E683700B8F58E /* GineaChatTests */,
+				CE5F2FC3210E683700B8F58E /* GineaChatUITests */,
+				CE5F2FA2210E683500B8F58E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE5F2FA2210E683500B8F58E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE5F2FA1210E683500B8F58E /* GineaChat.app */,
+				CE5F2FB5210E683700B8F58E /* GineaChatTests.xctest */,
+				CE5F2FC0210E683700B8F58E /* GineaChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE5F2FA3210E683500B8F58E /* GineaChat */ = {
+			isa = PBXGroup;
+			children = (
+				CE5F2FA4210E683500B8F58E /* AppDelegate.swift */,
+				CE5F2FA6210E683500B8F58E /* ViewController.swift */,
+				CE5F2FA8210E683500B8F58E /* Main.storyboard */,
+				CE5F2FAB210E683700B8F58E /* Assets.xcassets */,
+				CE5F2FAD210E683700B8F58E /* LaunchScreen.storyboard */,
+				CE5F2FB0210E683700B8F58E /* Info.plist */,
+			);
+			path = GineaChat;
+			sourceTree = "<group>";
+		};
+		CE5F2FB8210E683700B8F58E /* GineaChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE5F2FB9210E683700B8F58E /* GineaChatTests.swift */,
+				CE5F2FBB210E683700B8F58E /* Info.plist */,
+			);
+			path = GineaChatTests;
+			sourceTree = "<group>";
+		};
+		CE5F2FC3210E683700B8F58E /* GineaChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE5F2FC4210E683700B8F58E /* GineaChatUITests.swift */,
+				CE5F2FC6210E683700B8F58E /* Info.plist */,
+			);
+			path = GineaChatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE5F2FA0210E683500B8F58E /* GineaChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5F2FC9210E683700B8F58E /* Build configuration list for PBXNativeTarget "GineaChat" */;
+			buildPhases = (
+				CE5F2F9D210E683500B8F58E /* Sources */,
+				CE5F2F9E210E683500B8F58E /* Frameworks */,
+				CE5F2F9F210E683500B8F58E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GineaChat;
+			productName = GineaChat;
+			productReference = CE5F2FA1210E683500B8F58E /* GineaChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE5F2FB4210E683700B8F58E /* GineaChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5F2FCC210E683700B8F58E /* Build configuration list for PBXNativeTarget "GineaChatTests" */;
+			buildPhases = (
+				CE5F2FB1210E683700B8F58E /* Sources */,
+				CE5F2FB2210E683700B8F58E /* Frameworks */,
+				CE5F2FB3210E683700B8F58E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE5F2FB7210E683700B8F58E /* PBXTargetDependency */,
+			);
+			name = GineaChatTests;
+			productName = GineaChatTests;
+			productReference = CE5F2FB5210E683700B8F58E /* GineaChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE5F2FBF210E683700B8F58E /* GineaChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5F2FCF210E683700B8F58E /* Build configuration list for PBXNativeTarget "GineaChatUITests" */;
+			buildPhases = (
+				CE5F2FBC210E683700B8F58E /* Sources */,
+				CE5F2FBD210E683700B8F58E /* Frameworks */,
+				CE5F2FBE210E683700B8F58E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE5F2FC2210E683700B8F58E /* PBXTargetDependency */,
+			);
+			name = GineaChatUITests;
+			productName = GineaChatUITests;
+			productReference = CE5F2FC0210E683700B8F58E /* GineaChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE5F2F99210E683500B8F58E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Bruce Bookman";
+				TargetAttributes = {
+					CE5F2FA0210E683500B8F58E = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					CE5F2FB4210E683700B8F58E = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = CE5F2FA0210E683500B8F58E;
+					};
+					CE5F2FBF210E683700B8F58E = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = CE5F2FA0210E683500B8F58E;
+					};
+				};
+			};
+			buildConfigurationList = CE5F2F9C210E683500B8F58E /* Build configuration list for PBXProject "GineaChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE5F2F98210E683500B8F58E;
+			productRefGroup = CE5F2FA2210E683500B8F58E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE5F2FA0210E683500B8F58E /* GineaChat */,
+				CE5F2FB4210E683700B8F58E /* GineaChatTests */,
+				CE5F2FBF210E683700B8F58E /* GineaChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE5F2F9F210E683500B8F58E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5F2FAF210E683700B8F58E /* LaunchScreen.storyboard in Resources */,
+				CE5F2FAC210E683700B8F58E /* Assets.xcassets in Resources */,
+				CE5F2FAA210E683500B8F58E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5F2FB3210E683700B8F58E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5F2FBE210E683700B8F58E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE5F2F9D210E683500B8F58E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5F2FA7210E683500B8F58E /* ViewController.swift in Sources */,
+				CE5F2FA5210E683500B8F58E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5F2FB1210E683700B8F58E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5F2FBA210E683700B8F58E /* GineaChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5F2FBC210E683700B8F58E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5F2FC5210E683700B8F58E /* GineaChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE5F2FB7210E683700B8F58E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE5F2FA0210E683500B8F58E /* GineaChat */;
+			targetProxy = CE5F2FB6210E683700B8F58E /* PBXContainerItemProxy */;
+		};
+		CE5F2FC2210E683700B8F58E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE5F2FA0210E683500B8F58E /* GineaChat */;
+			targetProxy = CE5F2FC1210E683700B8F58E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE5F2FA8210E683500B8F58E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE5F2FA9210E683500B8F58E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE5F2FAD210E683700B8F58E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE5F2FAE210E683700B8F58E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE5F2FC7210E683700B8F58E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE5F2FC8210E683700B8F58E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE5F2FCA210E683700B8F58E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YYK5R5P6D3;
+				INFOPLIST_FILE = GineaChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = saganone.GineaChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE5F2FCB210E683700B8F58E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YYK5R5P6D3;
+				INFOPLIST_FILE = GineaChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = saganone.GineaChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE5F2FCD210E683700B8F58E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YYK5R5P6D3;
+				INFOPLIST_FILE = GineaChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = saganone.GineaChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GineaChat.app/GineaChat";
+			};
+			name = Debug;
+		};
+		CE5F2FCE210E683700B8F58E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YYK5R5P6D3;
+				INFOPLIST_FILE = GineaChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = saganone.GineaChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GineaChat.app/GineaChat";
+			};
+			name = Release;
+		};
+		CE5F2FD0210E683700B8F58E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YYK5R5P6D3;
+				INFOPLIST_FILE = GineaChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = saganone.GineaChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GineaChat;
+			};
+			name = Debug;
+		};
+		CE5F2FD1210E683700B8F58E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YYK5R5P6D3;
+				INFOPLIST_FILE = GineaChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = saganone.GineaChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GineaChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE5F2F9C210E683500B8F58E /* Build configuration list for PBXProject "GineaChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5F2FC7210E683700B8F58E /* Debug */,
+				CE5F2FC8210E683700B8F58E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE5F2FC9210E683700B8F58E /* Build configuration list for PBXNativeTarget "GineaChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5F2FCA210E683700B8F58E /* Debug */,
+				CE5F2FCB210E683700B8F58E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE5F2FCC210E683700B8F58E /* Build configuration list for PBXNativeTarget "GineaChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5F2FCD210E683700B8F58E /* Debug */,
+				CE5F2FCE210E683700B8F58E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE5F2FCF210E683700B8F58E /* Build configuration list for PBXNativeTarget "GineaChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5F2FD0210E683700B8F58E /* Debug */,
+				CE5F2FD1210E683700B8F58E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE5F2F99210E683500B8F58E /* Project object */;
+}
