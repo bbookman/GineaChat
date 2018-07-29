@@ -10,10 +10,10 @@
 		CE5F2FA5210E683500B8F58E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F2FA4210E683500B8F58E /* AppDelegate.swift */; };
 		CE5F2FA7210E683500B8F58E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F2FA6210E683500B8F58E /* ViewController.swift */; };
 		CE5F2FAA210E683500B8F58E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5F2FA8210E683500B8F58E /* Main.storyboard */; };
-		CE5F2FAC210E683700B8F58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5F2FAB210E683700B8F58E /* Assets.xcassets */; };
 		CE5F2FAF210E683700B8F58E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5F2FAD210E683700B8F58E /* LaunchScreen.storyboard */; };
 		CE5F2FBA210E683700B8F58E /* GineaChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F2FB9210E683700B8F58E /* GineaChatTests.swift */; };
 		CE5F2FC5210E683700B8F58E /* GineaChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F2FC4210E683700B8F58E /* GineaChatUITests.swift */; };
+		CE5F2FD5210E6E9D00B8F58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5F2FD4210E6E9D00B8F58E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		CE5F2FA4210E683500B8F58E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE5F2FA6210E683500B8F58E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE5F2FA9210E683500B8F58E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CE5F2FAB210E683700B8F58E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE5F2FAE210E683700B8F58E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE5F2FB0210E683700B8F58E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE5F2FB5210E683700B8F58E /* GineaChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GineaChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +46,7 @@
 		CE5F2FC0210E683700B8F58E /* GineaChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GineaChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5F2FC4210E683700B8F58E /* GineaChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GineaChatUITests.swift; sourceTree = "<group>"; };
 		CE5F2FC6210E683700B8F58E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5F2FD4210E6E9D00B8F58E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +100,8 @@
 				CE5F2FA4210E683500B8F58E /* AppDelegate.swift */,
 				CE5F2FA6210E683500B8F58E /* ViewController.swift */,
 				CE5F2FA8210E683500B8F58E /* Main.storyboard */,
-				CE5F2FAB210E683700B8F58E /* Assets.xcassets */,
 				CE5F2FAD210E683700B8F58E /* LaunchScreen.storyboard */,
+				CE5F2FD4210E6E9D00B8F58E /* Assets.xcassets */,
 				CE5F2FB0210E683700B8F58E /* Info.plist */,
 			);
 			path = GineaChat;
@@ -230,7 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE5F2FAF210E683700B8F58E /* LaunchScreen.storyboard in Resources */,
-				CE5F2FAC210E683700B8F58E /* Assets.xcassets in Resources */,
+				CE5F2FD5210E6E9D00B8F58E /* Assets.xcassets in Resources */,
 				CE5F2FAA210E683500B8F58E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
