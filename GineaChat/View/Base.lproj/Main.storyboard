@@ -56,7 +56,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="yM3-Za-fnx">
-                        <barButtonItem key="leftBarButtonItem" title="btnUserData" id="vhc-UM-RuY"/>
+                        <barButtonItem key="leftBarButtonItem" title="btnUserData" id="vhc-UM-RuY">
+                            <connections>
+                                <segue destination="IpI-zY-A4q" kind="show" id="gjr-gu-waS"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zjs-rZ-mXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -94,19 +98,28 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiI-uY-9f0">
+                                <rect key="frame" x="170" y="318.5" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <segue destination="NxO-St-pfw" kind="show" id="qjG-HK-nkT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Dr2-fo-xez" firstAttribute="trailing" secondItem="myx-DQ-uB5" secondAttribute="trailing" constant="10" id="WNF-da-x9w"/>
                             <constraint firstItem="myx-DQ-uB5" firstAttribute="top" secondItem="Dr2-fo-xez" secondAttribute="top" constant="50" id="jzB-ho-Bb3"/>
+                            <constraint firstItem="BiI-uY-9f0" firstAttribute="centerX" secondItem="wvt-Dy-liD" secondAttribute="centerX" id="nW4-YR-a93"/>
                             <constraint firstItem="myx-DQ-uB5" firstAttribute="leading" secondItem="Dr2-fo-xez" secondAttribute="leading" constant="10" id="scP-NG-OQS"/>
+                            <constraint firstItem="BiI-uY-9f0" firstAttribute="centerY" secondItem="wvt-Dy-liD" secondAttribute="centerY" id="y6Q-Su-hW4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dr2-fo-xez"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lhL-2b-S2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1584.8" y="178.56071964017991"/>
+            <point key="canvasLocation" x="1918" y="181"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4hG-Ej-ueD">
@@ -127,4 +140,8 @@
             <point key="canvasLocation" x="196" y="182"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="gjr-gu-waS"/>
+        <segue reference="qjG-HK-nkT"/>
+    </inferredMetricsTieBreakers>
 </document>
