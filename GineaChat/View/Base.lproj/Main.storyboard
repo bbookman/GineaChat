@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -55,12 +56,70 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="yM3-Za-fnx">
-                        <barButtonItem key="leftBarButtonItem" title="btnUserData" id="vhc-UM-RuY"/>
+                        <barButtonItem key="leftBarButtonItem" title="btnUserData" id="vhc-UM-RuY">
+                            <connections>
+                                <segue destination="IpI-zY-A4q" kind="show" id="gjr-gu-waS"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zjs-rZ-mXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="924" y="182.15892053973016"/>
+        </scene>
+        <!--UserDataVC-->
+        <scene sceneID="IU1-5O-6uZ">
+            <objects>
+                <viewController id="IpI-zY-A4q" userLabel="UserDataVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wvt-Dy-liD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="myx-DQ-uB5" userLabel="VerticalSV">
+                                <rect key="frame" x="10" y="70" width="355" height="90"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="First Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1nb-am-Oop" userLabel="txtFirstName">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Last Name" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C73-cT-eIm" userLabel="txtLastName">
+                                        <rect key="frame" x="0.0" y="30" width="355" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email Address" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X5x-DQ-jfk" userLabel="txtEmail">
+                                        <rect key="frame" x="0.0" y="60" width="355" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiI-uY-9f0">
+                                <rect key="frame" x="170" y="318.5" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <segue destination="NxO-St-pfw" kind="show" id="qjG-HK-nkT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dr2-fo-xez" firstAttribute="trailing" secondItem="myx-DQ-uB5" secondAttribute="trailing" constant="10" id="WNF-da-x9w"/>
+                            <constraint firstItem="myx-DQ-uB5" firstAttribute="top" secondItem="Dr2-fo-xez" secondAttribute="top" constant="50" id="jzB-ho-Bb3"/>
+                            <constraint firstItem="BiI-uY-9f0" firstAttribute="centerX" secondItem="wvt-Dy-liD" secondAttribute="centerX" id="nW4-YR-a93"/>
+                            <constraint firstItem="myx-DQ-uB5" firstAttribute="leading" secondItem="Dr2-fo-xez" secondAttribute="leading" constant="10" id="scP-NG-OQS"/>
+                            <constraint firstItem="BiI-uY-9f0" firstAttribute="centerY" secondItem="wvt-Dy-liD" secondAttribute="centerY" id="y6Q-Su-hW4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dr2-fo-xez"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lhL-2b-S2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1918" y="181"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4hG-Ej-ueD">
@@ -81,4 +140,8 @@
             <point key="canvasLocation" x="196" y="182"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="gjr-gu-waS"/>
+        <segue reference="qjG-HK-nkT"/>
+    </inferredMetricsTieBreakers>
 </document>
