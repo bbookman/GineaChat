@@ -7,7 +7,7 @@ target 'GineaChat' do
 
   # Pods for GineaChat
    pod 'Firebase/Core'
-
+   pod 'Firebase/Database'
 
   target 'GineaChatTests' do
     inherit! :search_paths
