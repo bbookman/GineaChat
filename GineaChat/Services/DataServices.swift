@@ -23,6 +23,7 @@ struct DataService {
         ] as [String:String]
         
         userDataReference.childByAutoId().setValue(data)
+        print("Wrote user \(user.firstName) \(user.lastName) \(user.emailAddress)" )
     }
     
     func writeMessage(message: Message){
@@ -31,10 +32,52 @@ struct DataService {
             ] as [String:String]
         
         messageDataReference.childByAutoId().setValue(data)
+        print("Write message \(message.messageText) from \(message.senderEmail)")
         
     }
 
-    
+    func readMessage(user: User, completion: @escaping (Message)->()){
+        var messageToReturn:Message?
+        
+        self.messageDataReference.observeSingleEvent(of: .value) { (snapshot) in
+            if let snapshot = snapshot.children.allObjects as? [DataSnapshot]{
+                for snap in snapshot {
+                    if let data = snap.value as? [String:String] {
+                        
+                        
+                        print("Data \(String(describing: data))")
+                        
+                        guard let messageText = data["messageText"] else {
+                            print("Could not get message text")
+                            return
+                        }
+                        print("messageText: \(messageText)")
+                        
+                        guard let email = data["email"] else {
+                            print("Could not get email")
+                            return
+                        }
+                        
+                        print("Email: \(email)")
+                        
+                        if email != user.emailAddress {
+                            
+                            messageToReturn?.messageText = messageText
+                            messageToReturn?.senderEmail = email
+                        } else {
+                            print("Message is from self")
+                            return  
+                        }
+                    }//let data
+                }//for snap
+                if messageToReturn != nil {
+                    print("\(String(describing: messageToReturn))")
+                    completion(messageToReturn!)
+                }
+            }// let snapshot
+        }//ref
+        
+    }
     
 
     
