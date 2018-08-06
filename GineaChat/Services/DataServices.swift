@@ -11,7 +11,8 @@ import FirebaseDatabase
 
 struct DataService {
     
-    let dataReference = Database.database().reference().child("users")
+    let userDataReference = Database.database().reference().child("users")
+    let messageDataReference = Database.database().reference().child("messages")
 
     func writeUser(user: User){
         
@@ -21,9 +22,17 @@ struct DataService {
                     "email": user.emailAddress
         ] as [String:String]
         
-        dataReference.childByAutoId().setValue(data)
+        userDataReference.childByAutoId().setValue(data)
     }
     
+    func writeMessage(message: Message){
+        let data = ["messageText": message.messageText,
+                  "email": message.senderEmail
+            ] as [String:String]
+        
+        messageDataReference.childByAutoId().setValue(data)
+        
+    }
 
     
     
