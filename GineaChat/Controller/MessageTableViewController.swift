@@ -24,15 +24,17 @@ class MessageTableViewController: UITableViewController {
         let myMessage: Message = Message(messageText: "How are you today?", senderEmail: "ff@ff.com")
         
         dataService.writeMessage(message: myMessage)
-        
-        
         dataService.readMessage(user: me) { (message) in
-            print("Message read is: \(message.messageText)")
-            print("From: \(message.senderEmail)")
+            guard let message = message else {
+                print("Got a bad message")
+                return
+            }
+            print("-----------------------------")
+            print("Message text: \(message.messageText)")
+            print("Sender : \(message.senderEmail)")
         }
         
     }
-
 
     // MARK: - Table view data source
 

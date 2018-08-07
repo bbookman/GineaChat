@@ -23,7 +23,9 @@ struct DataService {
         ] as [String:String]
         
         userDataReference.childByAutoId().setValue(data)
+        print("--------------- WROTE USER ------------")
         print("Wrote user \(user.firstName) \(user.lastName) \(user.emailAddress)" )
+        print("----------------------------------------")
     }
     
     func writeMessage(message: Message){
@@ -32,53 +34,35 @@ struct DataService {
             ] as [String:String]
         
         messageDataReference.childByAutoId().setValue(data)
+        print("--------------- WROTE MESSAGE ------------")
         print("Write message \(message.messageText) from \(message.senderEmail)")
+        print("----------------------------------------")
         
     }
 
-    func readMessage(user: User, completion: @escaping (Message)->()){
-        var messageToReturn:Message?
-        
-        self.messageDataReference.observeSingleEvent(of: .value) { (snapshot) in
-            if let snapshot = snapshot.children.allObjects as? [DataSnapshot]{
-                for snap in snapshot {
-                    if let data = snap.value as? [String:String] {
-                        
-                        
-                        print("Data \(String(describing: data))")
-                        
-                        guard let messageText = data["messageText"] else {
-                            print("Could not get message text")
-                            return
-                        }
-                        print("messageText: \(messageText)")
-                        
-                        guard let email = data["email"] else {
-                            print("Could not get email")
-                            return
-                        }
-                        
-                        print("Email: \(email)")
-                        
-                        if email != user.emailAddress {
-                            
-                            messageToReturn?.messageText = messageText
-                            messageToReturn?.senderEmail = email
-                        } else {
-                            print("Message is from self")
-                            return  
-                        }
-                    }//let data
-                }//for snap
-                if messageToReturn != nil {
-                    print("\(String(describing: messageToReturn))")
-                    completion(messageToReturn!)
-                }
-            }// let snapshot
-        }//ref
+    func readMessage(user: User, completion: @escaping  (Message?) -> Void)  {
+        self.messageDataReference.observe(.value) { (snapshot) in
+            guard
+                let data = snapshot.value as? [String:String],
+                let messageText = data["messageText"],
+                let senderEmail = data["email"]
+                
+                else {
+                    print("Error - Data incomplete")
+                    completion(nil)
+                    return
+            }//else guard
+            var message: Message?
+            message?.messageText = messageText
+            message?.senderEmail = senderEmail
+            print("Message from readMessage: \(String(describing :message))")
+            completion(message)
+            
+        }
         
     }
     
-
+    
+    
     
 }
