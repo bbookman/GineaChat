@@ -10,6 +10,6 @@ import Foundation
 
 struct Message {
     
-    var messageText: String
-    var senderEmail: String
+    var messageText: String?
+    var senderEmail: String?
 }

@@ -29,9 +29,7 @@ class MessageTableViewController: UITableViewController {
                 print("Got a bad message")
                 return
             }
-            print("-----------------------------")
-            print("Message text: \(message.messageText)")
-            print("Sender : \(message.senderEmail)")
+
         }
         
     }
