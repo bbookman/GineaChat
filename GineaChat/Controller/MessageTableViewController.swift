@@ -15,7 +15,7 @@ class MessageTableViewController: UITableViewController {
         
         // var numberOfGuinePigs: Int
         
-        let dataService: DataService = DataService.init()
+        let dataService: DataService = DataService()
         let me : User = User(firstName: "Bruce", lastName: "Bookman", emailAddress: "bb@bb.com")
 
         

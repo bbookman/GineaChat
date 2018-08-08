@@ -45,10 +45,20 @@ struct DataService {
         var returnObject: Message = Message(messageText: nil, senderEmail: nil)
 
         self.messageDataReference.observeSingleEvent(of: .value) { (snapshot) in
+            print("i am here now at guard let data")
             guard let data = snapshot.value as? [String:Any] else {
                 print("bad data")
                 completion(nil)
                 return
+            }
+            
+            var foundMessages: [Message] = []
+            for (_, message) in (data as? [String: [String: Any]] ?? [:]) {
+                guard let sender = message["email"] as? String, let content = message["messageText"] as? String else { continue }
+                
+                if sender != user.emailAddress {
+                    foundMessages.append(Message(messageText: content, senderEmail: sender))
+                }
             }
             
             if data["messageText"] != nil  && data["email"] != nil {
@@ -60,7 +70,7 @@ struct DataService {
             }
             print("---------------  RETURNING ---------------  ")
             print("returnObject: \(String(describing: returnObject))")
-            completion(returnObject)
+            completion(foundMessages.first) /// return []
 
         }//observe
         
