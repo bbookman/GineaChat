@@ -39,7 +39,32 @@ struct DataService {
         print("----------------------------------------")
         
     }
+    
+    
+    func readMessage(user: User, completion: @escaping (Message?) -> Void ) {
+            var returnObject: Message = Message(messageText: nil, senderEmail: nil)
+            self.messageDataReference.observeSingleEvent(of: .value) { (snapshot) in
+                if let snapshot =  snapshot.children.allObjects as? [DataSnapshot]{
+                    for snap in snapshot {
+                        if let data = snap.value as? [String:Any] {
+                            
+                            if data["messageText"] != nil && data["email"] != nil{
+                                returnObject.messageText = data["messageText"] as? String
+                                returnObject.senderEmail = data["email"] as? String
+                                
+                            }//if data
+                            
+                        }//if let data
 
+                    }//for snap
+                }//if let snapshot
+                print("---------------  RETURNING ---------------  ")
+                print("returnObject: \(String(describing: returnObject))")
+                completion(returnObject)
+        }//messageDataReference
+    }//readMessage
+    
+/* --------------
     func readMessage(user: User, completion: @escaping  (Message?) -> Void)  {
         
         var returnObject: Message = Message(messageText: nil, senderEmail: nil)
@@ -75,20 +100,8 @@ struct DataService {
         }//observe
         
     }
-    
-    /*
-     func GetUsername(uid:String , completion: (String) -> ()) {
-     firebase.child("Users").child(uid).observeSingleEventOfType(.Value) { (snapshot:FIRDataSnapshot) in
-     if let username = snapshot.value!["Username"] as? String
-     completion(username)
-     }
-     else {
-     completion("")
-     }
-     }
+*/
 
- */
-    
     
     
 }

@@ -25,12 +25,13 @@ class MessageTableViewController: UITableViewController {
         
         dataService.writeMessage(message: myMessage)
         dataService.readMessage(user: me) { (message) in
-            guard let message = message else {
-                print("Got a bad message")
-                return
+            if message?.messageText != nil && message?.senderEmail != nil {
+                let textMessage = message?.messageText
+                let fromUserEmail = message?.senderEmail
+                print("Message \(textMessage) from: \(fromUserEmail)")
             }
-
         }
+        
         
     }
 
