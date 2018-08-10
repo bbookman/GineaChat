@@ -11,13 +11,13 @@
 		CE04D7732113FF76006975B2 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04D7722113FF76006975B2 /* MessageTableViewController.swift */; };
 		CE1BE3032111698B000A414A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BE3022111698B000A414A /* User.swift */; };
 		CE1BE305211169D1000A414A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BE304211169D1000A414A /* Message.swift */; };
-		CE1BE3092112B640000A414A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE1BE3082112B640000A414A /* GoogleService-Info.plist */; };
 		CE5F2FA5210E683500B8F58E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F2FA4210E683500B8F58E /* AppDelegate.swift */; };
 		CE5F2FAA210E683500B8F58E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5F2FA8210E683500B8F58E /* Main.storyboard */; };
 		CE5F2FAF210E683700B8F58E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5F2FAD210E683700B8F58E /* LaunchScreen.storyboard */; };
 		CE5F2FBA210E683700B8F58E /* GineaChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F2FB9210E683700B8F58E /* GineaChatTests.swift */; };
 		CE5F2FC5210E683700B8F58E /* GineaChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F2FC4210E683700B8F58E /* GineaChatUITests.swift */; };
 		CE5F2FD5210E6E9D00B8F58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5F2FD4210E6E9D00B8F58E /* Assets.xcassets */; };
+		CED373A7211BFD380032E4E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CED373A6211BFD380032E4E8 /* GoogleService-Info.plist */; };
 		CEDA6EB92113F16E00FBE6B9 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDA6EB82113F16E00FBE6B9 /* DataServices.swift */; };
 		D488FD2C103474B3E70AC139 /* Pods_GineaChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11AA3293A162E0D9F2DEC4E /* Pods_GineaChatTests.framework */; };
 		E6A841C913542697FB2687D7 /* Pods_GineaChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783FB83D501911DCE211FCD1 /* Pods_GineaChatUITests.framework */; };
@@ -49,7 +49,6 @@
 		CE04D7722113FF76006975B2 /* MessageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
 		CE1BE3022111698B000A414A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CE1BE304211169D1000A414A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		CE1BE3082112B640000A414A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE5F2FA1210E683500B8F58E /* GineaChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GineaChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5F2FA4210E683500B8F58E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE5F2FA9210E683500B8F58E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,6 +61,7 @@
 		CE5F2FC4210E683700B8F58E /* GineaChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GineaChatUITests.swift; sourceTree = "<group>"; };
 		CE5F2FC6210E683700B8F58E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE5F2FD4210E6E9D00B8F58E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CED373A6211BFD380032E4E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CEDA6EB82113F16E00FBE6B9 /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 		F10DE912FB4B62FE9A008171 /* Pods-GineaChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GineaChatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GineaChatTests/Pods-GineaChatTests.release.xcconfig"; sourceTree = "<group>"; };
 		F62459D72B242D9CF5034BC0 /* Pods-GineaChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GineaChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GineaChat/Pods-GineaChat.debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 				CE5F2FD6210E829600B8F58E /* Services */,
 				CE5F2FA4210E683500B8F58E /* AppDelegate.swift */,
 				CE5F2FB0210E683700B8F58E /* Info.plist */,
-				CE1BE3082112B640000A414A /* GoogleService-Info.plist */,
+				CED373A6211BFD380032E4E8 /* GoogleService-Info.plist */,
 			);
 			path = GineaChat;
 			sourceTree = "<group>";
@@ -318,7 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE5F2FAF210E683700B8F58E /* LaunchScreen.storyboard in Resources */,
-				CE1BE3092112B640000A414A /* GoogleService-Info.plist in Resources */,
+				CED373A7211BFD380032E4E8 /* GoogleService-Info.plist in Resources */,
 				CE5F2FD5210E6E9D00B8F58E /* Assets.xcassets in Resources */,
 				CE5F2FAA210E683500B8F58E /* Main.storyboard in Resources */,
 			);

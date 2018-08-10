@@ -16,13 +16,16 @@ class MessageTableViewController: UITableViewController {
         // var numberOfGuinePigs: Int
         
         let dataService: DataService = DataService.init()
-        let me : User = User(firstName: "hhhh", lastName: "Flintsone", emailAddress: "fdssdfdsafds@bbb.com")
+        let me : User = User(firstName: "Tom", lastName: "Tutone", emailAddress: "tutone@tutu.com")
         
         dataService.writeUser(user: me)
         
-        let myMessage: Message = Message(messageText: "How are you today?", senderEmail:"fdssdfdsafds@bbb.com")
+        let myMessage: Message = Message(messageText: "Just Great?", senderEmail: "tutone@tutu.com")
         
         dataService.writeMessage(message: myMessage)
+        dataService.readMessage(user: me) { (message) in
+            
+        }
      
     }
 
