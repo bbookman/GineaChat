@@ -39,41 +39,27 @@ struct DataService {
         self.messageDataReference.observeSingleEvent(of: .value) { (dataSnapshot) in
             if let data = dataSnapshot.children.allObjects as? [DataSnapshot]{
 
-                
                 for info in data {
 
                     if let snap = dataSnapshot.value as? [String:String] {
                         
-                        print("\(snap)")
-                        
-
-                        
                         if snap["email"] != nil && snap["messageText"] != nil {
                             
-                            returnMessage?.messageText = snap["messageText"]!
-                            returnMessage?.senderEmail = snap["email"]!
+                            if snap["email"] != user.emailAddress {
                             
-                        }//if snap=
+                                returnMessage?.messageText = snap["messageText"]!
+                                returnMessage?.senderEmail = snap["email"]!
+                            }
+                            
+                        }//if snap
                         
-                    }//if let snao
+                    }//if let snap
         
                 }//for info in data
             }//if let data
         }//self.messageDataReference
+        completion(returnMessage)
     }//readMessage
-        
-        
-    /*
-         [Snap (-LJ_JkJCCMhIlb-yugEb) {
-            email = "fdssdfdsafds@bbb.com";
-            messageText = "How are you today?";
-         
-         }, Snap (-LJ_KKKeD03cHqK6yrw5) {
-            email = "fdssdfdsafds@bbb.com";
-            messageText = "How are you today?";
-         }]
-
- */
     
         
         
