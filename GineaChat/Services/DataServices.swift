@@ -50,15 +50,13 @@ struct DataService {
                                 returnMessage?.messageText = snap["messageText"]!
                                 returnMessage?.senderEmail = snap["email"]!
                             }
-                            
                         }//if snap
-                        
                     }//if let snap
-        
                 }//for info in data
             }//if let data
+                completion(returnMessage)  //returns nil!!!
         }//self.messageDataReference
-        completion(returnMessage)
+        
     }//readMessage
     
         
