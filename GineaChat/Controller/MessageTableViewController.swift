@@ -13,18 +13,17 @@ class MessageTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // var numberOfGuinePigs: Int
-        
         let dataService: DataService = DataService.init()
-        let me : User = User(firstName: "matt", lastName: "Tutone", emailAddress: "matt@tutu.com")
+        let theAppUser : User = User(firstName: "matt", lastName: "Flintstone", emailAddress: "matt@tutu.com")
         
-        dataService.writeUser(user: me)
+        //dataService.writeUser(user: me)
         
-        let myMessage: Message = Message(messageText: "Who?", senderEmail: "matt@tutu.com")
+        let myMessage: Message = Message(messageText: "Message not from matt", senderEmail: "stacy@tutu.com")
         
         dataService.writeMessage(message: myMessage)
-        dataService.readMessage(user: me) { (arMessage) in
+        dataService.readMessage(user: theAppUser) { (arMessage) in
             for message in arMessage {
+                print("================= MESSAGE THAT THE APP USER WILL SEE ================= ")
                 print("Message Text: \(message.messageText) , Sender: \(message.senderEmail)")
             }
         }
