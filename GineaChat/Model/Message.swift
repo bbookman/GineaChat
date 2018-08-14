@@ -13,3 +13,5 @@ struct Message {
     var messageText: String
     var senderEmail: String
 }
+
+

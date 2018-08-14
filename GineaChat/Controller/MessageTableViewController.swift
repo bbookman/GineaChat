@@ -16,24 +16,21 @@ class MessageTableViewController: UITableViewController {
         // var numberOfGuinePigs: Int
         
         let dataService: DataService = DataService.init()
-        let me : User = User(firstName: "Tiffany", lastName: "Tutone", emailAddress: "tiffanye@tutu.com")
+        let me : User = User(firstName: "matt", lastName: "Tutone", emailAddress: "matt@tutu.com")
         
         dataService.writeUser(user: me)
         
-        let myMessage: Message = Message(messageText: "This is so much fun", senderEmail: "tiffany@tutu.com")
+        let myMessage: Message = Message(messageText: "Who?", senderEmail: "matt@tutu.com")
         
         dataService.writeMessage(message: myMessage)
-        
-        dataService.readMessage(user: me) { (message) in
-            if message != nil {
-                
-                print("Message: \(message?.messageText) , Sender: \(message?.senderEmail)")
-                
-            } else {
-                print("ERROR: Message is nil")
+        dataService.readMessage(user: me) { (arMessage) in
+            for message in arMessage {
+                print("Message Text: \(message.messageText) , Sender: \(message.senderEmail)")
             }
-            
         }
+        
+        
+            
         
     }
 
