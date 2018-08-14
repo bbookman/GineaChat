@@ -18,9 +18,9 @@ class MessageTableViewController: UITableViewController {
         
         //dataService.writeUser(user: me)
         
-        let myMessage: Message = Message(messageText: "Message not from matt", senderEmail: "stacy@tutu.com")
+       // let myMessage: Message = Message(messageText: "I want all my friends to use this", senderEmail: "someoneElse@some.com")
         
-        dataService.writeMessage(message: myMessage)
+        //dataService.writeMessage(message: myMessage)
         dataService.readMessage(user: theAppUser) { (arMessage) in
             for message in arMessage {
                 print("================= MESSAGE THAT THE APP USER WILL SEE ================= ")
