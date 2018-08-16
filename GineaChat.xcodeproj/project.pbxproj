@@ -11,6 +11,7 @@
 		CE04D7732113FF76006975B2 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04D7722113FF76006975B2 /* MessageTableViewController.swift */; };
 		CE1BE3032111698B000A414A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BE3022111698B000A414A /* User.swift */; };
 		CE1BE305211169D1000A414A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BE304211169D1000A414A /* Message.swift */; };
+		CE2C116C21237D1500A92C32 /* UserDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C116B21237D1500A92C32 /* UserDataVC.swift */; };
 		CE5F2FA5210E683500B8F58E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F2FA4210E683500B8F58E /* AppDelegate.swift */; };
 		CE5F2FAA210E683500B8F58E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5F2FA8210E683500B8F58E /* Main.storyboard */; };
 		CE5F2FAF210E683700B8F58E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5F2FAD210E683700B8F58E /* LaunchScreen.storyboard */; };
@@ -49,6 +50,7 @@
 		CE04D7722113FF76006975B2 /* MessageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
 		CE1BE3022111698B000A414A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CE1BE304211169D1000A414A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		CE2C116B21237D1500A92C32 /* UserDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataVC.swift; sourceTree = "<group>"; };
 		CE5F2FA1210E683500B8F58E /* GineaChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GineaChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5F2FA4210E683500B8F58E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE5F2FA9210E683500B8F58E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				CE04D7722113FF76006975B2 /* MessageTableViewController.swift */,
+				CE2C116B21237D1500A92C32 /* UserDataVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1BE305211169D1000A414A /* Message.swift in Sources */,
+				CE2C116C21237D1500A92C32 /* UserDataVC.swift in Sources */,
 				CE1BE3032111698B000A414A /* User.swift in Sources */,
 				CE04D7732113FF76006975B2 /* MessageTableViewController.swift in Sources */,
 				CE5F2FA5210E683500B8F58E /* AppDelegate.swift in Sources */,

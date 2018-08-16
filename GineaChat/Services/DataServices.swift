@@ -37,9 +37,6 @@ struct DataService {
 
     func readMessage(user: User, completion: @escaping ([Message])-> Void){
         
-        print("================= ARGUEMENT USER COMING INTO readMessage ================= ")
-        print("user = ", user)
-        
         var foundMessages: [Message] = []
         
         self.messageDataReference.observeSingleEvent(of: .value) { (dataSnapshot) in
@@ -48,10 +45,6 @@ struct DataService {
                 return
             }
             
-             print("================= CONTENTS OF data ================= ")
-             print("data = ", data)
-            
-            
             for (_, message) in data  {
                 guard let sender = message["email"], let content = message["messageText"] else {
                     
@@ -59,17 +52,9 @@ struct DataService {
                     return
                     
                 }
-                print("================= THE EMAIL FROM THE DATABASE AND THE EMAIL OF THE USER ================= ")
-                
-                print("Sender (from the database): ", sender)
-                print("User Emai (current app user): ", user.emailAddress)
-                
+              
                 if sender != user.emailAddress {
                     foundMessages.append(Message(messageText: content, senderEmail: sender))
-                    
-                    print("================= ONLY APPEND THIS MESSAGE IF THE MESSAGE EMAIL ADDRESS IS NOT THE SAME AS THE CURRENT APP USER EMAIL ================= ")
-                    
-                    print("Found Messages : \(String(describing: foundMessages))")
                     
                 }//if sender
                 

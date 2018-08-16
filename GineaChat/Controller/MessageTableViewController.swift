@@ -9,11 +9,18 @@
 import UIKit
 
 class MessageTableViewController: UITableViewController {
+    
+    var appUser: User?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let dataService: DataService = DataService.init()
+        guard let appUser = self.appUser else {
+            print("Could not get App User")
+            return
+        }
+        
+        print("appUser = ", appUser)
         
     }
 

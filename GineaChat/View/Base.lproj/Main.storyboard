@@ -56,7 +56,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="yM3-Za-fnx">
-                        <barButtonItem key="leftBarButtonItem" title="btnUserData" id="vhc-UM-RuY">
+                        <barButtonItem key="leftBarButtonItem" title="User Info" id="vhc-UM-RuY">
                             <connections>
                                 <segue destination="IpI-zY-A4q" kind="show" id="gjr-gu-waS"/>
                             </connections>
@@ -70,7 +70,7 @@
         <!--UserDataVC-->
         <scene sceneID="IU1-5O-6uZ">
             <objects>
-                <viewController id="IpI-zY-A4q" userLabel="UserDataVC" sceneMemberID="viewController">
+                <viewController id="IpI-zY-A4q" userLabel="UserDataVC" customClass="UserDataVC" customModule="GineaChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wvt-Dy-liD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,7 +102,8 @@
                                 <rect key="frame" x="170" y="318.5" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
-                                    <segue destination="NxO-St-pfw" kind="show" id="qjG-HK-nkT"/>
+                                    <action selector="didTapSave:" destination="IpI-zY-A4q" eventType="touchUpInside" id="zfh-05-lDW"/>
+                                    <segue destination="NxO-St-pfw" kind="show" identifier="backToMessageVC" id="qjG-HK-nkT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -116,10 +117,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dr2-fo-xez"/>
                     </view>
+                    <connections>
+                        <outlet property="txtEmail" destination="X5x-DQ-jfk" id="9mm-TZ-7qR"/>
+                        <outlet property="txtFirstName" destination="1nb-am-Oop" id="sNr-3k-hEF"/>
+                        <outlet property="txtLastName" destination="C73-cT-eIm" id="JZH-fP-kg8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lhL-2b-S2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1870" y="171"/>
+            <point key="canvasLocation" x="1732" y="170"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4hG-Ej-ueD">
