@@ -11,16 +11,31 @@ import UIKit
 class MessageTableViewController: UITableViewController {
     
     var appUser: User?
+    var messages: [Message]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let dataService: DataService = DataService()
         
-        guard let appUser = self.appUser else {
-            print("Could not get App User")
-            return
+        if let user = appUser {
+            
+            dataService.readMessage(user: user) { (messages) in
+                
+                if messages.isEmpty {
+                    print("No messages")
+                } else {
+                    
+                    self.messages = messages
+                    
+                }
+                
+            }
+            
+        } else {
+            print("User is nill")
         }
-        
-        print("appUser = ", appUser)
+
+      
         
     }
 
@@ -29,7 +44,13 @@ class MessageTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        
+        guard let messages = self.messages else {
+            print("Warning, messages is nil")
+            return 0
+        }
+        
+        return messages.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

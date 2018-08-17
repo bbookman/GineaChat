@@ -18,6 +18,7 @@
 		CE5F2FBA210E683700B8F58E /* GineaChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F2FB9210E683700B8F58E /* GineaChatTests.swift */; };
 		CE5F2FC5210E683700B8F58E /* GineaChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F2FC4210E683700B8F58E /* GineaChatUITests.swift */; };
 		CE5F2FD5210E6E9D00B8F58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5F2FD4210E6E9D00B8F58E /* Assets.xcassets */; };
+		CE6452032127570A00D2DF29 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6452022127570A00D2DF29 /* MessageTableViewCell.swift */; };
 		CED373A7211BFD380032E4E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CED373A6211BFD380032E4E8 /* GoogleService-Info.plist */; };
 		CEDA6EB92113F16E00FBE6B9 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDA6EB82113F16E00FBE6B9 /* DataServices.swift */; };
 		D488FD2C103474B3E70AC139 /* Pods_GineaChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11AA3293A162E0D9F2DEC4E /* Pods_GineaChatTests.framework */; };
@@ -63,6 +64,7 @@
 		CE5F2FC4210E683700B8F58E /* GineaChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GineaChatUITests.swift; sourceTree = "<group>"; };
 		CE5F2FC6210E683700B8F58E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE5F2FD4210E6E9D00B8F58E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE6452022127570A00D2DF29 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 		CED373A6211BFD380032E4E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CEDA6EB82113F16E00FBE6B9 /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 		F10DE912FB4B62FE9A008171 /* Pods-GineaChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GineaChatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GineaChatTests/Pods-GineaChatTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			children = (
 				CE5F2FA8210E683500B8F58E /* Main.storyboard */,
 				CE5F2FD4210E6E9D00B8F58E /* Assets.xcassets */,
+				CE6452022127570A00D2DF29 /* MessageTableViewCell.swift */,
 				CE5F2FAD210E683700B8F58E /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -427,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6452032127570A00D2DF29 /* MessageTableViewCell.swift in Sources */,
 				CE1BE305211169D1000A414A /* Message.swift in Sources */,
 				CE2C116C21237D1500A92C32 /* UserDataVC.swift in Sources */,
 				CE1BE3032111698B000A414A /* User.swift in Sources */,
