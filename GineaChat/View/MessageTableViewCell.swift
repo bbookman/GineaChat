@@ -13,6 +13,12 @@ class MessageTableViewCell: UITableViewCell {
   
     @IBOutlet weak var txtMessage: UITextView!
     
+    func displayMessage(message: Message){
+        self.txtMessage.text = message.messageText
+        
+    }
+    
+ 
     
     
 }
