@@ -45,7 +45,7 @@ class UserDataVC: UIViewController {
 
         dataService.writeUser(user: user!)
         
-        performSegue(withIdentifier: "backToMessageVC", sender: self)
+      //  performSegue(withIdentifier: "backToMessageVC", sender: self)
         
         
     }//didTapSave

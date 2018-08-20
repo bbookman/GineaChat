@@ -1,7 +1,7 @@
 //
 //  MessageTableViewController.swift
 //  GineaChat
-//
+//nb
 //  Created by Bruce Bookman on 8/2/18.
 //  Copyright © 2018 Bruce Bookman. All rights reserved.
 //
@@ -12,9 +12,11 @@ class MessageTableViewController: UITableViewController {
     
     var appUser: User?
     var messages: [Message]?
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
         let dataService: DataService = DataService()
         
         if let user = appUser {
@@ -26,7 +28,7 @@ class MessageTableViewController: UITableViewController {
                 } else {
                     
                     self.messages = messages
-                    
+                    self.tableView.reloadData()
                 }
                 
             }
@@ -34,6 +36,11 @@ class MessageTableViewController: UITableViewController {
         } else {
             print("User is nill")
         }
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
 
       
         
@@ -44,7 +51,7 @@ class MessageTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-       return 0
+       return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

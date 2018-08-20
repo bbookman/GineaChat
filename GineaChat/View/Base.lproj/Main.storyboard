@@ -19,23 +19,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="232" id="oe6-Pa-Ecj" userLabel="Message Cell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="232" id="oe6-Pa-Ecj" userLabel="Message Cell" customClass="MessageTableViewCell" customModule="GineaChat" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="232"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oe6-Pa-Ecj" id="geA-Pw-4i3" userLabel="Message View">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="231.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2Ff-DU-M9n">
-                                            <rect key="frame" x="12" y="29" width="351" height="172"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2Ff-DU-M9n">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="231.5"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="2Ff-DU-M9n" secondAttribute="trailing" id="1D4-qy-Lmh"/>
+                                        <constraint firstItem="2Ff-DU-M9n" firstAttribute="top" secondItem="geA-Pw-4i3" secondAttribute="top" id="CFI-y2-z7S"/>
+                                        <constraint firstAttribute="bottom" secondItem="2Ff-DU-M9n" secondAttribute="bottom" id="TQf-4h-G9l"/>
+                                        <constraint firstItem="2Ff-DU-M9n" firstAttribute="leading" secondItem="geA-Pw-4i3" secondAttribute="leading" id="dmg-xa-Yja"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="txtMessage" destination="2Ff-DU-M9n" id="pc1-QP-VFF"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
