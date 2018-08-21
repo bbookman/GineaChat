@@ -41,6 +41,9 @@
                                         <constraint firstAttribute="bottom" secondItem="2Ff-DU-M9n" secondAttribute="bottom" id="oip-VK-ihb"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="txtMessage" destination="2Ff-DU-M9n" id="4QK-Je-Z9b"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -140,7 +143,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="gjr-gu-waS"/>
         <segue reference="qjG-HK-nkT"/>
     </inferredMetricsTieBreakers>
 </document>

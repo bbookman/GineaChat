@@ -14,7 +14,7 @@ class MessageTableViewController: UITableViewController {
     var messages: [Message]?
     
     override func viewWillAppear(_ animated: Bool) {
-        tableView.reloadData()
+        super.viewWillAppear(true)
         let dataService: DataService = DataService()
         
         if let user = appUser {
@@ -26,6 +26,7 @@ class MessageTableViewController: UITableViewController {
                 } else {
                     
                     self.messages = messages
+                    self.tableView.reloadData()
                     
                 }
                 
