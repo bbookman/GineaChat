@@ -12,9 +12,9 @@ class MessageTableViewController: UITableViewController {
     
     var appUser: User?
     var messages: [Message]?
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
         let dataService: DataService = DataService()
         
         if let user = appUser {
@@ -35,6 +35,11 @@ class MessageTableViewController: UITableViewController {
             print("User is nill")
         }
 
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+       
       
         
     }
@@ -44,7 +49,7 @@ class MessageTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-       return 0
+       return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
