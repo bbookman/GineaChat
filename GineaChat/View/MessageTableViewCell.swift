@@ -12,11 +12,12 @@ class MessageTableViewCell: UITableViewCell {
 
   
     @IBOutlet weak var lblSenderID: UILabel!
+    
     @IBOutlet weak var txtMessage: UITextView!
     
     func displayMessage(message: Message){
         self.txtMessage.text = message.messageText
-        self.lblSenderID.text = message.senderEmail
+       self.lblSenderID.text = message.senderEmail
     }
     
  

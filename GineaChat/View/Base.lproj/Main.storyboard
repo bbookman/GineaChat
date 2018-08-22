@@ -66,15 +66,25 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                         </textView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chc-ei-0Gi" userLabel="SenderID">
+                                            <rect key="frame" x="0.0" y="231.5" width="374" height="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="2Ff-DU-M9n" secondAttribute="trailing" id="1D4-qy-Lmh"/>
+                                        <constraint firstItem="chc-ei-0Gi" firstAttribute="bottom" secondItem="2Ff-DU-M9n" secondAttribute="bottom" id="9V1-og-JRm"/>
                                         <constraint firstItem="2Ff-DU-M9n" firstAttribute="top" secondItem="geA-Pw-4i3" secondAttribute="top" id="CFI-y2-z7S"/>
                                         <constraint firstAttribute="bottom" secondItem="2Ff-DU-M9n" secondAttribute="bottom" id="TQf-4h-G9l"/>
+                                        <constraint firstItem="chc-ei-0Gi" firstAttribute="centerX" secondItem="2Ff-DU-M9n" secondAttribute="centerX" id="U6G-AJ-bOF"/>
                                         <constraint firstItem="2Ff-DU-M9n" firstAttribute="leading" secondItem="geA-Pw-4i3" secondAttribute="leading" id="dmg-xa-Yja"/>
+                                        <constraint firstItem="chc-ei-0Gi" firstAttribute="leading" secondItem="2Ff-DU-M9n" secondAttribute="leading" id="nwz-jO-fHm"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="lblSenderID" destination="chc-ei-0Gi" id="I60-3J-I2R"/>
                                     <outlet property="txtMessage" destination="2Ff-DU-M9n" id="pc1-QP-VFF"/>
                                 </connections>
                             </tableViewCell>
