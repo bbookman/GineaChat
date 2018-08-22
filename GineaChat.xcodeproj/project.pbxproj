@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1862D571F692078B2E8B88B3 /* Pods_GineaChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C50CD119C5926A85548D28 /* Pods_GineaChat.framework */; };
+		CE04D7732113FF76006975B2 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE04D7722113FF76006975B2 /* MessageTableViewController.swift */; };
+		CE1BE3032111698B000A414A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BE3022111698B000A414A /* User.swift */; };
+		CE1BE305211169D1000A414A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BE304211169D1000A414A /* Message.swift */; };
+		CE2C116C21237D1500A92C32 /* UserDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C116B21237D1500A92C32 /* UserDataVC.swift */; };
 		CE5F2FA5210E683500B8F58E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F2FA4210E683500B8F58E /* AppDelegate.swift */; };
-		CE5F2FA7210E683500B8F58E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F2FA6210E683500B8F58E /* ViewController.swift */; };
 		CE5F2FAA210E683500B8F58E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5F2FA8210E683500B8F58E /* Main.storyboard */; };
-		CE5F2FAC210E683700B8F58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5F2FAB210E683700B8F58E /* Assets.xcassets */; };
 		CE5F2FAF210E683700B8F58E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5F2FAD210E683700B8F58E /* LaunchScreen.storyboard */; };
 		CE5F2FBA210E683700B8F58E /* GineaChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F2FB9210E683700B8F58E /* GineaChatTests.swift */; };
 		CE5F2FC5210E683700B8F58E /* GineaChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5F2FC4210E683700B8F58E /* GineaChatUITests.swift */; };
+		CE5F2FD5210E6E9D00B8F58E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5F2FD4210E6E9D00B8F58E /* Assets.xcassets */; };
+		CE6452032127570A00D2DF29 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6452022127570A00D2DF29 /* MessageTableViewCell.swift */; };
+		CED373A7211BFD380032E4E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CED373A6211BFD380032E4E8 /* GoogleService-Info.plist */; };
+		CEDA6EB92113F16E00FBE6B9 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDA6EB82113F16E00FBE6B9 /* DataServices.swift */; };
+		D488FD2C103474B3E70AC139 /* Pods_GineaChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11AA3293A162E0D9F2DEC4E /* Pods_GineaChatTests.framework */; };
+		E6A841C913542697FB2687D7 /* Pods_GineaChatUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 783FB83D501911DCE211FCD1 /* Pods_GineaChatUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +43,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2240FAD64D9C83E3F76DBEC0 /* Pods-GineaChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GineaChatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GineaChatTests/Pods-GineaChatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		783FB83D501911DCE211FCD1 /* Pods_GineaChatUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GineaChatUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA9204D7F99AA4E9965FF63B /* Pods-GineaChatUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GineaChatUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GineaChatUITests/Pods-GineaChatUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C11AA3293A162E0D9F2DEC4E /* Pods_GineaChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GineaChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC02A98D5C0615341157EB15 /* Pods-GineaChatUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GineaChatUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GineaChatUITests/Pods-GineaChatUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CE04D7722113FF76006975B2 /* MessageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
+		CE1BE3022111698B000A414A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CE1BE304211169D1000A414A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		CE2C116B21237D1500A92C32 /* UserDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataVC.swift; sourceTree = "<group>"; };
 		CE5F2FA1210E683500B8F58E /* GineaChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GineaChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5F2FA4210E683500B8F58E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE5F2FA6210E683500B8F58E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE5F2FA9210E683500B8F58E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CE5F2FAB210E683700B8F58E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE5F2FAE210E683700B8F58E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE5F2FB0210E683700B8F58E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE5F2FB5210E683700B8F58E /* GineaChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GineaChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +63,14 @@
 		CE5F2FC0210E683700B8F58E /* GineaChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GineaChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE5F2FC4210E683700B8F58E /* GineaChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GineaChatUITests.swift; sourceTree = "<group>"; };
 		CE5F2FC6210E683700B8F58E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE5F2FD4210E6E9D00B8F58E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE6452022127570A00D2DF29 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		CED373A6211BFD380032E4E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CEDA6EB82113F16E00FBE6B9 /* DataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
+		F10DE912FB4B62FE9A008171 /* Pods-GineaChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GineaChatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GineaChatTests/Pods-GineaChatTests.release.xcconfig"; sourceTree = "<group>"; };
+		F62459D72B242D9CF5034BC0 /* Pods-GineaChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GineaChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GineaChat/Pods-GineaChat.debug.xcconfig"; sourceTree = "<group>"; };
+		F7C50CD119C5926A85548D28 /* Pods_GineaChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GineaChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF2BF34F731BEEA091F8DF1 /* Pods-GineaChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GineaChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-GineaChat/Pods-GineaChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1862D571F692078B2E8B88B3 /* Pods_GineaChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D488FD2C103474B3E70AC139 /* Pods_GineaChatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +94,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A841C913542697FB2687D7 /* Pods_GineaChatUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3139960BD538FA5B1DA26242 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F62459D72B242D9CF5034BC0 /* Pods-GineaChat.debug.xcconfig */,
+				FBF2BF34F731BEEA091F8DF1 /* Pods-GineaChat.release.xcconfig */,
+				2240FAD64D9C83E3F76DBEC0 /* Pods-GineaChatTests.debug.xcconfig */,
+				F10DE912FB4B62FE9A008171 /* Pods-GineaChatTests.release.xcconfig */,
+				AA9204D7F99AA4E9965FF63B /* Pods-GineaChatUITests.debug.xcconfig */,
+				CC02A98D5C0615341157EB15 /* Pods-GineaChatUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9BB6663D395D468DA0CA10E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7C50CD119C5926A85548D28 /* Pods_GineaChat.framework */,
+				C11AA3293A162E0D9F2DEC4E /* Pods_GineaChatTests.framework */,
+				783FB83D501911DCE211FCD1 /* Pods_GineaChatUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE5F2F98210E683500B8F58E = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +131,8 @@
 				CE5F2FB8210E683700B8F58E /* GineaChatTests */,
 				CE5F2FC3210E683700B8F58E /* GineaChatUITests */,
 				CE5F2FA2210E683500B8F58E /* Products */,
+				3139960BD538FA5B1DA26242 /* Pods */,
+				9BB6663D395D468DA0CA10E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +149,13 @@
 		CE5F2FA3210E683500B8F58E /* GineaChat */ = {
 			isa = PBXGroup;
 			children = (
+				CE5F2FD9210E82AE00B8F58E /* Model */,
+				CE5F2FD8210E82A800B8F58E /* View */,
+				CE5F2FD7210E829F00B8F58E /* Controller */,
+				CE5F2FD6210E829600B8F58E /* Services */,
 				CE5F2FA4210E683500B8F58E /* AppDelegate.swift */,
-				CE5F2FA6210E683500B8F58E /* ViewController.swift */,
-				CE5F2FA8210E683500B8F58E /* Main.storyboard */,
-				CE5F2FAB210E683700B8F58E /* Assets.xcassets */,
-				CE5F2FAD210E683700B8F58E /* LaunchScreen.storyboard */,
 				CE5F2FB0210E683700B8F58E /* Info.plist */,
+				CED373A6211BFD380032E4E8 /* GoogleService-Info.plist */,
 			);
 			path = GineaChat;
 			sourceTree = "<group>";
@@ -125,6 +178,43 @@
 			path = GineaChatUITests;
 			sourceTree = "<group>";
 		};
+		CE5F2FD6210E829600B8F58E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CEDA6EB82113F16E00FBE6B9 /* DataServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE5F2FD7210E829F00B8F58E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE04D7722113FF76006975B2 /* MessageTableViewController.swift */,
+				CE2C116B21237D1500A92C32 /* UserDataVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE5F2FD8210E82A800B8F58E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE5F2FA8210E683500B8F58E /* Main.storyboard */,
+				CE5F2FD4210E6E9D00B8F58E /* Assets.xcassets */,
+				CE6452022127570A00D2DF29 /* MessageTableViewCell.swift */,
+				CE5F2FAD210E683700B8F58E /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE5F2FD9210E82AE00B8F58E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE1BE3022111698B000A414A /* User.swift */,
+				CE1BE304211169D1000A414A /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE5F2FC9210E683700B8F58E /* Build configuration list for PBXNativeTarget "GineaChat" */;
 			buildPhases = (
+				117F39A57B58B553D1F5FD7E /* [CP] Check Pods Manifest.lock */,
 				CE5F2F9D210E683500B8F58E /* Sources */,
 				CE5F2F9E210E683500B8F58E /* Frameworks */,
 				CE5F2F9F210E683500B8F58E /* Resources */,
+				2E4645168F6598DECDC20C05 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +241,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE5F2FCC210E683700B8F58E /* Build configuration list for PBXNativeTarget "GineaChatTests" */;
 			buildPhases = (
+				D72377A0272AC9CBFCCD16C1 /* [CP] Check Pods Manifest.lock */,
 				CE5F2FB1210E683700B8F58E /* Sources */,
 				CE5F2FB2210E683700B8F58E /* Frameworks */,
 				CE5F2FB3210E683700B8F58E /* Resources */,
@@ -167,6 +260,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE5F2FCF210E683700B8F58E /* Build configuration list for PBXNativeTarget "GineaChatUITests" */;
 			buildPhases = (
+				D59FB4A5E4E5CA06090C032C /* [CP] Check Pods Manifest.lock */,
 				CE5F2FBC210E683700B8F58E /* Sources */,
 				CE5F2FBD210E683700B8F58E /* Frameworks */,
 				CE5F2FBE210E683700B8F58E /* Resources */,
@@ -230,7 +324,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE5F2FAF210E683700B8F58E /* LaunchScreen.storyboard in Resources */,
-				CE5F2FAC210E683700B8F58E /* Assets.xcassets in Resources */,
+				CED373A7211BFD380032E4E8 /* GoogleService-Info.plist in Resources */,
+				CE5F2FD5210E6E9D00B8F58E /* Assets.xcassets in Resources */,
 				CE5F2FAA210E683500B8F58E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,13 +346,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		117F39A57B58B553D1F5FD7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GineaChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E4645168F6598DECDC20C05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GineaChat/Pods-GineaChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GineaChat/Pods-GineaChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D59FB4A5E4E5CA06090C032C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GineaChatUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D72377A0272AC9CBFCCD16C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GineaChatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE5F2F9D210E683500B8F58E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5F2FA7210E683500B8F58E /* ViewController.swift in Sources */,
+				CE6452032127570A00D2DF29 /* MessageTableViewCell.swift in Sources */,
+				CE1BE305211169D1000A414A /* Message.swift in Sources */,
+				CE2C116C21237D1500A92C32 /* UserDataVC.swift in Sources */,
+				CE1BE3032111698B000A414A /* User.swift in Sources */,
+				CE04D7732113FF76006975B2 /* MessageTableViewController.swift in Sources */,
 				CE5F2FA5210E683500B8F58E /* AppDelegate.swift in Sources */,
+				CEDA6EB92113F16E00FBE6B9 /* DataServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +607,7 @@
 		};
 		CE5F2FCA210E683700B8F58E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F62459D72B242D9CF5034BC0 /* Pods-GineaChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +626,7 @@
 		};
 		CE5F2FCB210E683700B8F58E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBF2BF34F731BEEA091F8DF1 /* Pods-GineaChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +645,7 @@
 		};
 		CE5F2FCD210E683700B8F58E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2240FAD64D9C83E3F76DBEC0 /* Pods-GineaChatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +667,7 @@
 		};
 		CE5F2FCE210E683700B8F58E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F10DE912FB4B62FE9A008171 /* Pods-GineaChatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +689,7 @@
 		};
 		CE5F2FD0210E683700B8F58E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA9204D7F99AA4E9965FF63B /* Pods-GineaChatUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +710,7 @@
 		};
 		CE5F2FD1210E683700B8F58E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC02A98D5C0615341157EB15 /* Pods-GineaChatUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
