@@ -35,7 +35,7 @@ struct DataService {
     }
 
 
-    func readMessage(user: User, completion: @escaping ([Message])-> Void){
+    func readMessage(completion: @escaping ([Message])-> Void){
         
         var foundMessages: [Message] = []
         
@@ -53,10 +53,9 @@ struct DataService {
                     
                 }
               
-                if sender != user.emailAddress {
-                    foundMessages.append(Message(messageText: content, senderEmail: sender))
-                    
-                }//if sender
+          
+                foundMessages.append(Message(messageText: content, senderEmail: sender))
+          
                 
             }//for
             completion(foundMessages)

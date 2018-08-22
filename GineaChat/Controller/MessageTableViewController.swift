@@ -18,27 +18,26 @@ class MessageTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
-        let dataService: DataService = DataService()
-        
-        if let user = appUser {
-            
-            dataService.readMessage(user: user) { (messages) in
-                
-                if messages.isEmpty {
-                    print("No messages")
-                } else {
-                    
-                    self.messages = messages
-                    self.tableView.reloadData()
-                }
-                
-            }
-            
-        } else {
-            print("User is nill")
-        }
+        getMessages()
     }
     
+    func getMessages(){
+        let dataService: DataService = DataService()
+        
+        dataService.readMessage() { (messages) in
+            
+            if messages.isEmpty {
+                print("No messages")
+            } else {
+                
+                self.messages = messages
+                self.tableView.reloadData()
+                self.view.setNeedsLayout()
+            }
+            
+        }
+        
+    }
     
     @IBAction func didTapSend(_ sender: UIButton) {
         
@@ -52,7 +51,7 @@ class MessageTableViewController: UITableViewController {
         let dataService: DataService = DataService()
         dataService.writeMessage(message: message)
         self.sendText.text = ""
-        
+        getMessages()
         
         
         
