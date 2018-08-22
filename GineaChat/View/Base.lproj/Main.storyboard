@@ -18,9 +18,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="GIH-7R-KAn" userLabel="Send Message View">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Message Here" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="waF-Qm-bX1" userLabel="Send Text">
+                                    <rect key="frame" x="5" y="0.0" width="300" height="44"/>
+                                    <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="300" id="bGr-xx-3jd"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mA0-SW-hUf" userLabel="Send">
+                                    <rect key="frame" x="334" y="0.0" width="36" height="44"/>
+                                    <state key="normal" title="Send"/>
+                                    <connections>
+                                        <action selector="didTapSend:" destination="NxO-St-pfw" eventType="touchUpInside" id="gbp-ns-iwG"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="waF-Qm-bX1" firstAttribute="top" secondItem="GIH-7R-KAn" secondAttribute="top" id="4Gk-Z0-DGt"/>
+                                <constraint firstAttribute="bottom" secondItem="mA0-SW-hUf" secondAttribute="bottom" id="AbQ-gg-B0c"/>
+                                <constraint firstItem="waF-Qm-bX1" firstAttribute="leading" secondItem="GIH-7R-KAn" secondAttribute="leading" constant="5" id="Nav-Ht-y1d"/>
+                                <constraint firstItem="mA0-SW-hUf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GIH-7R-KAn" secondAttribute="leading" constant="20" symbolic="YES" id="R3Z-dk-OWT"/>
+                                <constraint firstItem="mA0-SW-hUf" firstAttribute="top" secondItem="GIH-7R-KAn" secondAttribute="top" id="ZPZ-W6-8YQ"/>
+                                <constraint firstAttribute="bottom" secondItem="waF-Qm-bX1" secondAttribute="bottom" id="bnd-wW-4zi"/>
+                                <constraint firstAttribute="trailing" secondItem="mA0-SW-hUf" secondAttribute="trailing" constant="5" id="tbn-OW-pxr"/>
+                            </constraints>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="232" id="oe6-Pa-Ecj" userLabel="Message Cell" customClass="MessageTableViewCell" customModule="GineaChat" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="232"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="232"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oe6-Pa-Ecj" id="geA-Pw-4i3" userLabel="Message View">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="231.5"/>
@@ -58,6 +91,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="sendText" destination="waF-Qm-bX1" id="AAH-t7-Byo"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zjs-rZ-mXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -143,6 +179,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="gjr-gu-waS"/>
         <segue reference="qjG-HK-nkT"/>
     </inferredMetricsTieBreakers>
 </document>
